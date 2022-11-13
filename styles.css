@@ -1,0 +1,168 @@
+body {
+    margin: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+/* format features section */
+.feature {
+    display: flex;
+    flex-direction: row;
+}
+
+/* format awesome font icons */
+.fa-solid {
+    color: darkorange;
+    font-size: 5vw;
+    margin: 20px;
+}
+
+#features {
+    margin-top: 1rem;
+}
+
+#features h2,
+#features p {
+    margin: 0;
+}
+
+/* format navigation bar */
+#nav-bar {
+    /* Position navigation bar fixed at the top */
+    position: fixed;
+    float: right;
+    top: 0;
+    right: 0;
+    display: flex;
+    gap: 10%;
+    white-space: nowrap;
+    background-color: rgba(255, 140, 0, 0.7);
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    margin: 2px;
+}
+
+/* format email field */
+#email {
+    padding: 0.3rem;
+    margin: 1rem;
+    width: 15rem;
+    border: 1px solid gray;
+}
+
+/* format submit button */
+#submit {
+    margin: 1rem;
+}
+
+/* unified formatting for all clickable items */
+button,
+#submit,
+#footer li {
+    background-color: darkorange;
+    color: white;
+    padding: 0.3rem;
+    border: none;
+}
+
+/* format logo */
+#header-img {
+    padding: 20px;
+    width: 300px;
+}
+
+/* position the video */
+#how-it-works {
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Format pricing section */
+/* Arrange items in a grid horizontally */
+#pricing {
+    display: grid;
+}
+
+article {
+    text-align: center;
+    border: 1px solid black;
+    margin: 1rem;
+    padding-bottom: 1rem;
+}
+
+article h2 {
+    font-size: 18px;
+    margin: 0;
+    padding: 1rem;
+}
+
+/* format footer */
+#footer {
+    text-align: center;
+}
+
+article h2,
+#footer {
+    background-color: lightgray;
+}
+
+#footer ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
+
+#footer a {
+    text-decoration: none;
+    color: white;
+}
+
+#footer li {
+    flex-direction: column;
+    margin-top: 0.5rem;
+}
+
+#footer p {
+    padding-left: 2rem;
+}
+
+/* For mobile devices */
+@media only screen and (max-width: 600px) {
+
+    /* Arrange items in a grid vertically */
+    #pricing {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    #nav-bar {
+        width: 130px;
+        flex-direction: column;
+    }
+
+    /* To make the video smaller, to avoid horizontal scrolling in small mobile phones*/
+    iframe {
+        width: 80vw;
+    }
+}
+
+/* For large screens */
+@media only screen and (min-width: 600px) {
+
+    /* Arrange items in a grid horizontally */
+    #pricing {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+    }
+
+    #nav-bar {
+        width: 300px;
+    }
+}
