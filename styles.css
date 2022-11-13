@@ -61,10 +61,9 @@ nav a {
     margin: 1rem;
 }
 
-/* unified formatting for all clickable items */
+/* unified formatting for buttons*/
 button,
-#submit,
-#footer li {
+#submit {
     background-color: darkorange;
     color: white;
     padding: 0.3rem;
@@ -110,18 +109,27 @@ article h2 {
 article h2,
 #footer {
     background-color: lightgray;
+    padding-bottom: 10px;
+    line-height: 0.5rem;
 }
 
 #footer ul {
     list-style: none;
     display: flex;
-    gap: 2rem;
-    justify-content: center;
+    gap: 0.5rem;
+    justify-content: right;
+    padding-right: 10px;
 }
 
 #footer a {
     text-decoration: none;
+    color: black;
+}
+
+#footer a:hover {
+    font-weight: bold;
     color: white;
+    background-color: darkorange;
 }
 
 #footer li {
@@ -130,7 +138,8 @@ article h2,
 }
 
 #footer p {
-    padding-left: 2rem;
+    text-align: right;
+    padding-right: 10px;
 }
 
 /* For mobile devices */
