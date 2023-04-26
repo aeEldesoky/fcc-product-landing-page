@@ -16,11 +16,14 @@ h1 {
 .fa-solid {
     color: darkorange;
     font-size: 5vw;
-    margin: 20px;
+    margin-top: 0;
+    margin-bottom: 5vh;
 }
 
-#features {
-    margin-top: 1rem;
+.feature {
+    margin-top: 3vh 0 4vh 0;
+    display: grid;
+    grid-template-columns: 1fr 9fr;
 }
 
 #features h2,
@@ -48,7 +51,13 @@ nav a {
     margin: 2px;
 }
 
-/* format email field */
+/* format form */
+#form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 #email {
     padding: 0.3rem;
     margin: 1rem;
@@ -58,7 +67,7 @@ nav a {
 
 /* format submit button */
 #submit {
-    margin: 1rem;
+    margin: 0 1rem 5rem 0;
 }
 
 /* unified formatting for buttons*/
@@ -68,6 +77,7 @@ button,
     color: white;
     padding: 0.3rem;
     border: none;
+    width: 200px;
 }
 
 /* format logo */
@@ -154,11 +164,32 @@ article h2,
     #nav-bar {
         width: 130px;
         flex-direction: column;
+        background-color: orange;
+        opacity: 80%;
     }
 
+    #nav-bar a {
+        color: black;
+    }
+
+    #header-img {
+        width: 40vw;
+        height: auto;
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+
+    .feature {
+        padding-top: 2vh;
+    }
     /* To make the video smaller, to avoid horizontal scrolling in small mobile phones*/
     iframe {
         width: 80vw;
+    }
+
+    #submit {
+        margin-bottom: 1vh;
     }
 }
 
@@ -173,5 +204,9 @@ article h2,
 
     #nav-bar {
         width: 300px;
+    }
+
+    #features {
+        margin-left: 20vw;
     }
 }
