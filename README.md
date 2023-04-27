@@ -2,7 +2,7 @@
 
 ## Description
 
-View a live demo at [Product Landing Page](https://aezz4007.github.io/fcc-product-landing-page/)
+View a live demo at [Product Landing Page](https://amira-ezz-eldin.github.io/fcc-product-landing-page/)
 
 This project is a part of the [Free Code Camp (FCC)](https://www.freecodecamp.org) "Responsive Web Design" certificate requirements.
 
